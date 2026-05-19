@@ -1,0 +1,101 @@
+employee_id,first_name,last_name,date_of_birth,sin_number,email,phone_number,home_address,department,annual_income,years_employed,expense_category,claim_amount,num_items_claimed,days_since_last_claim,meal_expense,travel_expense,lodging_expense,is_weekend_claim,num_prior_approvals,receipt_vs_claim_diff,is_anomaly
+EMP-1084,Stephanie,Baker,1995-11-30,825-546-101,stephanie.baker28@outlook.com,(850) 703-2494,718 Birch Rd - Surrey BC V7E 3F9,Operations,73389,17,Software,48.61,2,27,23.39,57.06,13.94,0,1,3.41,0
+EMP-1054,Jennifer,Walker,1999-03-13,462-898-673,jennifer.walker50@gmail.com,(782) 835-1986,4481 Maple St - Surrey BC V5W 5K5,HR,69483,8,Office Supplies,36.64,3,32,47.83,75.48,27.24,0,1,8.85,0
+EMP-1071,Jonathan,Ramirez,1983-05-25,508-436-385,jonathan.ramirez44@gmail.com,(809) 966-5728,9594 Spruce Ln - New Westminster BC V6E 8C7,Engineering,79762,19,Travel,83.38,2,44,28.41,13.61,0.0,0,1,2.8,0
+EMP-1046,Timothy,Ortiz,1974-09-11,177-807-252,timothy.ortiz43@gmail.com,(275) 790-1878,9133 Pine Dr - Delta BC V8H 7K7,IT,49640,11,Office Supplies,46.18,5,49,32.2,76.84,17.86,0,0,3.5,0
+EMP-1045,Jessica,Cooper,1970-09-03,674-109-214,jessica.cooper9@outlook.com,(266) 610-9056,6340 Elm Way - Langley BC V9T 7D1,Marketing,99055,9,Equipment,68.2,4,9,45.63,58.27,0.0,0,2,-4.29,0
+EMP-1040,Brian,Cook,1970-12-17,949-383-145,brian.cook31@outlook.com,(914) 329-9042,358 Cedar Blvd - Coquitlam BC V1E 7Q1,Legal,41092,17,Office Supplies,46.69,5,35,40.95,41.48,41.73,1,1,5.27,0
+EMP-1023,Mark,Johnson,1982-08-13,371-235-457,mark.johnson29@outlook.com,(908) 449-6016,2340 Oak Ave - Vancouver BC V5Z 8B9,HR,125209,12,Client Entertainment,90.72,1,20,5.52,54.37,0.0,1,2,1.28,0
+EMP-1081,Sandra,Young,1979-05-17,546-720-623,sandra.young80@outlook.com,(790) 241-3870,2193 Oak Ave - Delta BC V9L 1L4,Engineering,81061,9,Training,45.21,2,55,45.12,50.87,0.0,0,2,-5.41,0
+EMP-1011,Jason,Miller,1995-12-15,692-708-140,jason.miller40@outlook.com,(968) 675-7209,6817 Cedar Blvd - Burnaby BC V8Z 5K9,Marketing,106381,4,Conference,65.26,6,26,27.62,83.69,0.71,0,1,0.85,0
+EMP-1001,Joseph,Howard,1971-12-27,159-693-853,joseph.howard56@gmail.com,(718) 863-6590,572 Pine Dr - Surrey BC V5R 1R6,Operations,126052,8,Conference,186.95,5,9,34.66,22.95,0.0,0,2,-0.19,0
+EMP-1019,Brenda,Reyes,1981-02-05,423-869-174,brenda.reyes52@outlook.com,(768) 976-4937,9726 Elm Way - Delta BC V5O 5G6,Operations,66252,8,Office Supplies,276.83,7,50,24.65,37.68,26.01,1,2,2.04,0
+EMP-1031,Kimberly,Lee,1965-07-18,999-237-370,kimberly.lee65@outlook.com,(980) 906-4033,2002 Oak Ave - Richmond BC V9E 7O5,Marketing,36162,12,Office Supplies,96.08,6,34,18.89,22.99,0.0,0,0,2.59,0
+EMP-1074,Cynthia,Flores,1999-04-27,621-509-795,cynthia.flores11@outlook.com,(478) 712-9847,9833 Walnut Ct - Langley BC V9Z 1O9,Engineering,51168,1,Travel,227.68,7,48,24.87,90.64,37.25,0,0,2.3,0
+EMP-1034,Carol,King,1977-03-29,388-719-315,carol.king61@outlook.com,(811) 489-2647,6042 Oak Ave - New Westminster BC V9U 6B6,IT,64246,16,Training,78.57,2,14,60.72,34.42,0.0,0,2,-3.78,0
+EMP-1091,Amy,Davis,1993-09-11,227-837-407,amy.davis49@outlook.com,(458) 531-2899,536 Walnut Ct - Vancouver BC V7Q 6H6,HR,38120,13,Software,35.49,5,30,40.55,7.08,15.96,0,1,-2.17,0
+EMP-1005,Mark,Campbell,2002-04-10,973-643-261,mark.campbell61@gmail.com,(645) 380-9548,6898 Birch Rd - Coquitlam BC V1J 5S9,Operations,38668,12,Client Entertainment,287.24,1,7,40.38,43.53,3.68,0,2,-1.82,0
+EMP-1077,Brenda,Cruz,1965-06-18,367-282-694,brenda.cruz9@gmail.com,(952) 530-5102,8664 Cedar Blvd - New Westminster BC V6J 7N5,Operations,105884,18,Software,84.21,4,16,35.55,31.84,0.0,0,2,2.15,0
+EMP-1078,Mark,Gutierrez,1969-11-23,371-139-211,mark.gutierrez84@outlook.com,(226) 293-4750,9895 Maple St - New Westminster BC V2K 2R6,Operations,40843,17,Travel,31.52,5,35,39.67,61.22,6.89,0,1,1.04,0
+EMP-1013,Patricia,Martin,1996-11-23,773-697-678,patricia.martin6@outlook.com,(532) 386-8988,8964 Maple St - Burnaby BC V4U 5H1,Finance,66508,5,Equipment,116.37,3,18,40.91,52.84,0.0,0,1,0.09,0
+EMP-1032,Karen,Collins,1979-11-28,218-209-860,karen.collins71@outlook.com,(396) 421-8933,8950 Walnut Ct - Surrey BC V7U 2P9,Operations,83203,12,Meals,95.91,1,41,0.0,37.26,0.0,0,0,-3.63,0
+EMP-1056,Emily,Walker,1986-02-07,867-258-342,emily.walker95@gmail.com,(981) 412-4457,1603 Pine Dr - Delta BC V7O 6F5,IT,35929,15,Equipment,115.35,4,31,57.33,52.33,13.54,0,1,9.06,0
+EMP-1089,Kenneth,Smith,1992-04-05,780-438-738,kenneth.smith14@gmail.com,(878) 610-1601,7973 Birch Rd - Burnaby BC V9D 5C2,IT,39247,19,Office Supplies,30.53,5,30,31.3,51.02,5.51,0,2,0.48,0
+EMP-1027,James,Baker,1991-04-11,409-726-926,james.baker60@gmail.com,(560) 919-8434,9231 Birch Rd - Burnaby BC V7A 5R1,Operations,99186,1,Travel,82.42,5,25,30.06,53.33,35.69,0,2,-9.2,0
+EMP-1043,Ryan,Mitchell,1968-11-13,265-859-552,ryan.mitchell30@outlook.com,(548) 388-1841,6680 Walnut Ct - Burnaby BC V8W 8C1,Marketing,52324,14,Conference,89.76,4,36,17.73,68.74,21.34,0,0,2.47,0
+EMP-1070,Lisa,Diaz,1980-01-27,124-775-297,lisa.diaz28@outlook.com,(261) 369-6039,9969 Cedar Blvd - Burnaby BC V3Y 8O9,Finance,63040,12,Equipment,121.99,5,37,44.14,37.95,0.0,0,1,3.05,0
+EMP-1016,Sandra,Rodriguez,1966-12-09,421-344-371,sandra.rodriguez54@gmail.com,(769) 210-9464,8802 Walnut Ct - Surrey BC V3F 2T6,Finance,70205,8,Training,156.94,4,51,47.85,26.6,47.91,0,0,-3.89,0
+EMP-1041,Dorothy,Sanchez,1985-07-12,103-441-889,dorothy.sanchez41@gmail.com,(305) 212-5658,1141 Spruce Ln - Langley BC V6Q 2O8,Operations,120536,9,Equipment,16.0,1,14,35.67,75.51,0.0,1,0,-4.75,0
+EMP-1097,Ashley,Rogers,1969-06-26,866-278-730,ashley.rogers16@gmail.com,(840) 652-1845,369 Pine Dr - Surrey BC V5N 1T5,IT,42000,0,Equipment,5600.0,42,0,420.0,1100.0,780.0,1,0,150.0,1
+EMP-1010,Emma,Lopez,1973-03-06,222-683-352,emma.lopez97@outlook.com,(485) 661-4995,1744 Spruce Ln - Burnaby BC V9O 1X2,Engineering,72124,4,Office Supplies,50.86,6,41,55.26,41.93,0.0,0,0,3.72,0
+EMP-1073,Christopher,Sanchez,1971-12-12,385-459-756,christopher.sanchez54@outlook.com,(905) 511-7594,7665 Spruce Ln - Vancouver BC V1L 5C1,Finance,51649,6,Meals,320.96,6,47,35.69,6.5,0.0,0,2,4.17,0
+EMP-1012,John,Anderson,1982-11-11,734-183-529,john.anderson26@outlook.com,(544) 229-9098,6612 Oak Ave - New Westminster BC V9M 6U7,Legal,47151,11,Meals,173.8,4,33,39.59,15.39,9.47,0,1,-0.92,0
+EMP-1048,Stephen,Adams,1973-06-19,478-696-665,stephen.adams54@outlook.com,(287) 454-2940,6232 Cedar Blvd - Langley BC V2C 2C6,HR,62127,14,Office Supplies,159.98,4,20,20.89,36.9,0.0,0,1,0.61,0
+EMP-1086,David,Peterson,1982-01-30,803-836-859,david.peterson22@gmail.com,(541) 528-2713,4768 Spruce Ln - Richmond BC V9H 5Z7,Marketing,107546,1,Conference,68.75,6,30,26.58,39.43,45.15,0,0,0.15,0
+EMP-1029,Jason,Nguyen,1990-02-15,783-936-667,jason.nguyen97@gmail.com,(436) 323-4155,7824 Maple St - New Westminster BC V4U 2U7,Operations,77238,8,Equipment,160.6,2,40,36.24,68.48,2.26,0,1,-3.12,0
+EMP-1094,Charles,Jones,1990-10-13,813-402-667,charles.jones81@outlook.com,(673) 623-1888,7449 Maple St - Burnaby BC V1I 4E8,Finance,36000,0,Client Entertainment,4200.0,35,1,380.0,950.0,650.0,1,0,120.0,1
+EMP-1006,Sarah,Lewis,2000-01-22,158-620-182,sarah.lewis95@outlook.com,(866) 476-9817,8122 Cedar Blvd - Langley BC V9P 6K8,Engineering,73962,13,Meals,94.5,4,16,34.06,16.8,59.2,0,2,-0.28,0
+EMP-1067,Anthony,Perez,1998-08-30,936-571-458,anthony.perez83@outlook.com,(635) 317-9922,7238 Walnut Ct - Burnaby BC V7J 6H5,IT,97225,2,Office Supplies,30.88,2,16,41.66,52.56,29.62,0,0,0.89,0
+EMP-1066,Amanda,Peterson,1994-08-22,581-327-304,amanda.peterson85@outlook.com,(840) 803-4241,5421 Cedar Blvd - Langley BC V6C 7D3,Marketing,67952,18,Meals,114.21,4,41,44.22,47.12,51.27,0,2,3.1,0
+EMP-1036,Barbara,Thompson,1999-03-13,803-749-973,barbara.thompson82@outlook.com,(569) 383-5952,449 Maple St - New Westminster BC V4E 4C8,IT,66570,5,Conference,174.45,7,9,37.99,36.58,65.19,0,2,-7.03,0
+EMP-1017,Nicholas,Roberts,1967-01-23,505-234-787,nicholas.roberts74@outlook.com,(395) 287-4954,4045 Spruce Ln - Surrey BC V4O 5O4,Sales,47237,6,Training,54.46,2,53,44.17,47.84,0.0,0,0,0.98,0
+EMP-1050,George,Williams,2001-10-12,142-415-473,george.williams90@outlook.com,(820) 810-4697,2102 Walnut Ct - New Westminster BC V7X 1J9,Marketing,119964,14,Travel,29.02,5,20,17.46,74.26,0.0,1,1,-0.48,0
+EMP-1035,Susan,Cook,1996-08-10,834-451-308,susan.cook97@outlook.com,(398) 503-4727,4620 Pine Dr - Burnaby BC V8C 4U9,Legal,80756,4,Software,133.2,6,58,30.89,32.56,0.0,0,2,-3.06,0
+EMP-1008,Anna,Rogers,1987-03-19,709-169-791,anna.rogers85@gmail.com,(646) 948-5397,3926 Walnut Ct - Vancouver BC V6X 8W6,Legal,119740,19,Meals,150.58,4,20,51.67,20.15,0.0,0,1,-8.55,0
+EMP-1096,Sarah,Martinez,1983-06-09,780-488-793,sarah.martinez88@gmail.com,(837) 974-9167,4006 Walnut Ct - Langley BC V2D 8T8,Legal,40000,1,Office Supplies,3100.0,22,1,290.0,720.0,480.0,1,0,95.0,1
+EMP-1028,Christopher,Anderson,1990-06-15,769-641-108,christopher.anderson72@gmail.com,(477) 513-5118,7551 Birch Rd - Coquitlam BC V7U 6D3,Finance,41085,15,Equipment,100.32,6,43,46.81,66.15,6.7,0,2,-6.4,0
+EMP-1020,Betty,Ortiz,1977-11-09,109-569-736,betty.ortiz84@gmail.com,(907) 687-9041,8016 Oak Ave - Richmond BC V7S 6S4,HR,65241,15,Equipment,114.19,7,56,44.49,78.72,14.13,0,2,-8.51,0
+EMP-1082,John,Lewis,1974-02-14,218-494-690,john.lewis17@outlook.com,(681) 731-8245,3053 Pine Dr - New Westminster BC V8G 4E2,Legal,84300,17,Conference,207.22,1,54,22.2,71.47,0.0,0,0,5.27,0
+EMP-1026,Kimberly,Wright,1965-04-04,953-656-820,kimberly.wright16@outlook.com,(552) 635-6419,5649 Oak Ave - Langley BC V2E 4V6,HR,82581,18,Conference,121.63,6,52,31.42,54.5,17.29,0,0,5.07,0
+EMP-1063,George,Taylor,2003-09-17,373-263-906,george.taylor60@gmail.com,(495) 923-5632,2978 Cedar Blvd - Delta BC V9W 4Q8,IT,83608,6,Training,89.76,1,37,52.32,69.37,0.0,0,0,-3.64,0
+EMP-1014,Barbara,Lee,1980-01-27,635-423-367,barbara.lee61@gmail.com,(417) 563-5232,7210 Oak Ave - Burnaby BC V8F 5A0,HR,49161,11,Equipment,20.45,7,32,16.67,70.74,1.7,0,2,1.74,0
+EMP-1025,Emma,Morgan,1993-08-12,391-261-548,emma.morgan7@gmail.com,(684) 766-9698,2265 Birch Rd - Coquitlam BC V3I 8Z4,Sales,53978,8,Client Entertainment,93.48,7,30,27.92,82.78,0.0,0,1,8.33,0
+EMP-1004,Ashley,Phillips,1993-05-14,698-588-614,ashley.phillips87@outlook.com,(850) 670-3506,2469 Walnut Ct - Richmond BC V9X 3C4,Operations,75752,4,Conference,112.95,7,59,50.92,23.24,0.0,0,1,0.75,0
+EMP-1018,Patricia,Carter,1990-08-29,760-407-568,patricia.carter90@outlook.com,(937) 616-9004,253 Spruce Ln - Coquitlam BC V9F 2O5,Finance,43639,6,Office Supplies,135.14,2,34,21.67,80.54,3.82,1,2,-4.89,0
+EMP-1039,Amanda,Hill,1971-01-16,194-749-533,amanda.hill10@gmail.com,(255) 766-5786,1901 Maple St - Surrey BC V1L 4S5,Legal,116815,10,Meals,49.84,4,56,45.67,49.97,62.53,0,0,-4.88,0
+EMP-1009,Barbara,Murphy,1982-11-11,982-340-513,barbara.murphy43@outlook.com,(530) 451-2419,6425 Cedar Blvd - Langley BC V1E 9S5,Engineering,120515,19,Conference,138.5,1,55,57.45,37.07,5.45,0,1,-6.74,0
+EMP-1079,Michelle,Edwards,1978-12-03,710-544-453,michelle.edwards4@gmail.com,(890) 789-1339,4755 Elm Way - Surrey BC V6C 3L4,IT,46973,7,Conference,40.25,1,50,31.79,34.95,0.0,0,2,1.36,0
+EMP-1007,Susan,Moore,1986-12-19,971-290-170,susan.moore11@outlook.com,(993) 695-8616,9003 Walnut Ct - Langley BC V6G 4S6,Legal,45495,2,Office Supplies,70.11,5,30,8.4,84.55,0.0,0,1,1.54,0
+EMP-1065,Melissa,Stewart,2001-11-26,993-139-979,melissa.stewart51@gmail.com,(903) 439-5334,5229 Walnut Ct - Delta BC V7J 2M0,Finance,68241,7,Training,218.75,3,47,45.22,74.24,6.48,0,0,-0.37,0
+EMP-1037,Timothy,Cook,1967-07-22,370-617-600,timothy.cook67@outlook.com,(214) 925-9751,3494 Pine Dr - Richmond BC V6Y 3Z9,Operations,106581,5,Software,29.67,6,40,38.89,56.72,46.88,0,2,-4.62,0
+EMP-1090,Margaret,Martinez,2003-03-21,421-779-968,margaret.martinez40@gmail.com,(665) 290-6153,4569 Spruce Ln - Surrey BC V7C 4O5,Operations,111528,17,Conference,119.18,1,14,26.15,40.23,10.59,1,1,-2.31,0
+EMP-1057,William,Reed,1967-02-07,985-266-919,william.reed78@gmail.com,(470) 876-2330,5205 Birch Rd - Burnaby BC V1E 3Y9,Engineering,40825,9,Client Entertainment,82.72,5,24,52.74,57.2,24.48,0,2,3.54,0
+EMP-1100,Dorothy,Morales,1972-02-10,411-393-315,dorothy.morales85@outlook.com,(915) 696-2989,366 Birch Rd - Burnaby BC V6H 2Y9,HR,125000,12,Software,12.0,1,200,0.0,0.0,0.0,0,1,0.0,1
+EMP-1055,Sandra,Davis,1998-12-13,995-516-735,sandra.davis54@gmail.com,(824) 957-2625,200 Cedar Blvd - Surrey BC V7C 3X0,Legal,35412,15,Office Supplies,89.4,7,36,33.03,32.63,0.0,0,0,-3.13,0
+EMP-1044,Jonathan,Lee,1980-09-23,664-822-537,jonathan.lee20@gmail.com,(458) 689-2869,5377 Cedar Blvd - Burnaby BC V3I 9W5,IT,68461,8,Conference,71.52,4,5,30.4,38.61,0.0,0,2,0.92,0
+EMP-1051,Pamela,Anderson,1966-02-28,915-981-140,pamela.anderson98@gmail.com,(994) 735-7232,5219 Birch Rd - Burnaby BC V9G 3V7,Marketing,36301,4,Meals,352.13,4,59,38.48,54.06,35.66,0,1,5.75,0
+EMP-1068,Paul,King,1972-12-06,412-940-914,paul.king60@outlook.com,(430) 863-3441,2854 Oak Ave - Burnaby BC V9Q 4Y5,Operations,74482,17,Office Supplies,77.8,7,7,43.8,40.37,22.93,0,2,-6.68,0
+EMP-1047,William,Smith,1982-05-30,658-136-954,william.smith54@outlook.com,(355) 352-5978,6632 Walnut Ct - Burnaby BC V6N 6V4,Engineering,64807,1,Office Supplies,151.46,7,8,35.53,0.0,0.0,0,2,-2.88,0
+EMP-1069,Elizabeth,Ortiz,1969-12-23,992-333-328,elizabeth.ortiz34@outlook.com,(472) 345-2169,5852 Cedar Blvd - Richmond BC V2E 5G2,Engineering,45285,11,Office Supplies,109.54,2,5,21.75,27.04,0.39,0,0,1.9,0
+EMP-1062,Ryan,Morgan,1963-08-13,852-930-354,ryan.morgan93@outlook.com,(498) 233-4792,4286 Elm Way - New Westminster BC V2A 8X6,Operations,38120,11,Client Entertainment,114.05,3,37,29.93,12.32,0.0,0,2,-7.85,0
+EMP-1098,Brenda,Walker,1970-12-17,682-408-515,brenda.walker73@gmail.com,(408) 473-9998,4041 Walnut Ct - Surrey BC V2Q 6C8,Marketing,115000,18,Equipment,8.0,1,120,0.0,0.0,0.0,0,2,0.0,1
+EMP-1080,Linda,Thomas,1963-01-30,846-905-421,linda.thomas26@gmail.com,(983) 888-5415,6521 Cedar Blvd - Burnaby BC V5R 7U5,Finance,79828,17,Training,34.02,2,6,33.75,83.47,7.83,0,2,-6.38,0
+EMP-1042,Jennifer,Martin,1981-11-01,233-752-368,jennifer.martin11@outlook.com,(680) 690-8216,3729 Maple St - Coquitlam BC V8U 1B7,HR,74574,19,Meals,55.6,5,23,35.72,48.17,32.02,0,2,10.0,0
+EMP-1059,Richard,Hernandez,1990-05-16,125-283-854,richard.hernandez56@outlook.com,(765) 276-3564,7342 Walnut Ct - Coquitlam BC V4Y 9D5,Operations,82914,10,Training,196.41,4,16,25.5,67.32,8.58,0,1,3.16,0
+EMP-1049,Emily,Morales,1999-09-24,251-540-230,emily.morales99@gmail.com,(771) 982-7818,1682 Birch Rd - Surrey BC V9B 9R5,Operations,117315,5,Software,115.69,6,28,40.35,61.87,0.0,0,2,10.0,0
+EMP-1099,Jonathan,Scott,1975-06-08,661-953-100,jonathan.scott45@gmail.com,(334) 494-8178,9014 Maple St - Delta BC V8B 7L4,HR,39000,1,Equipment,3900.0,30,1,310.0,850.0,520.0,1,0,78.0,1
+EMP-1058,Sandra,Hernandez,1965-02-03,930-281-522,sandra.hernandez63@outlook.com,(360) 445-3847,915 Oak Ave - Coquitlam BC V8V 7P9,Legal,84698,9,Equipment,151.91,2,28,24.45,84.37,17.0,0,2,-2.81,0
+EMP-1076,Paul,Mitchell,2000-12-01,128-218-998,paul.mitchell45@outlook.com,(812) 240-8078,5726 Oak Ave - Surrey BC V1H 8O8,Sales,62791,11,Client Entertainment,62.92,1,17,31.56,80.0,0.0,0,1,-8.3,0
+EMP-1033,Margaret,Smith,1993-07-28,666-259-378,margaret.smith21@gmail.com,(483) 941-9595,6786 Elm Way - Vancouver BC V6G 8O3,IT,54398,4,Meals,156.4,4,27,48.48,36.87,0.0,0,0,0.93,0
+EMP-1095,Dorothy,Nelson,1993-02-28,230-296-530,dorothy.nelson90@gmail.com,(392) 730-6927,8747 Walnut Ct - Burnaby BC V5H 5D0,Engineering,120000,15,Equipment,15.0,1,2,0.0,0.0,0.0,0,2,-0.5,1
+EMP-1060,Timothy,Morales,1985-09-10,440-901-521,timothy.morales50@outlook.com,(202) 618-8381,7143 Oak Ave - Coquitlam BC V8Q 5B3,Legal,70940,9,Meals,40.2,2,54,20.94,47.93,53.49,0,2,4.86,0
+EMP-1064,Christopher,Taylor,1966-11-24,818-210-491,christopher.taylor80@gmail.com,(919) 664-2166,5902 Oak Ave - Delta BC V1N 1O1,HR,64035,2,Office Supplies,35.08,7,55,12.02,62.91,19.16,0,2,-1.24,0
+EMP-1085,Paul,Williams,1995-12-15,632-925-651,paul.williams33@gmail.com,(681) 556-7690,2812 Spruce Ln - Vancouver BC V7L 4O9,Legal,38636,7,Training,152.89,6,21,52.24,62.32,0.0,0,1,0.14,0
+EMP-1038,Richard,Wilson,1973-06-04,357-966-152,richard.wilson31@outlook.com,(329) 480-1745,146 Elm Way - Surrey BC V3R 5Z2,Engineering,42327,8,Software,181.49,3,38,55.1,59.89,16.67,0,2,-6.76,0
+EMP-1030,Carol,Parker,1967-02-07,406-779-206,carol.parker79@gmail.com,(523) 322-9779,5051 Walnut Ct - Burnaby BC V3B 1J7,HR,54014,11,Conference,47.52,2,37,38.21,66.26,0.0,0,2,0.13,0
+EMP-1002,Patricia,Diaz,1985-08-26,655-162-865,patricia.diaz78@gmail.com,(212) 630-9031,1627 Pine Dr - Burnaby BC V8D 3P4,Engineering,69169,5,Client Entertainment,71.26,4,26,14.4,38.83,0.0,0,1,5.52,0
+EMP-1053,David,Flores,1996-12-08,355-782-205,david.flores46@outlook.com,(802) 639-6003,9506 Pine Dr - Delta BC V9Y 9A9,HR,44121,19,Training,124.43,7,53,14.08,82.21,5.22,0,0,-0.17,0
+EMP-1022,Rebecca,Peterson,1980-03-27,650-318-618,rebecca.peterson14@gmail.com,(501) 426-7625,4789 Pine Dr - New Westminster BC V4U 4T4,Legal,54313,11,Meals,65.79,3,16,7.95,74.65,27.06,0,1,2.36,0
+EMP-1003,Kimberly,Howard,1968-07-16,421-158-151,kimberly.howard60@outlook.com,(308) 643-6934,8437 Elm Way - Delta BC V8P 4O8,Finance,97592,15,Training,69.01,2,33,22.48,34.04,0.0,0,0,0.57,0
+EMP-1024,Laura,Anderson,1999-04-12,170-350-478,laura.anderson90@gmail.com,(879) 795-7046,6077 Cedar Blvd - Burnaby BC V5K 7F3,Finance,50704,13,Office Supplies,112.92,2,30,34.08,40.31,0.0,0,1,4.91,0
+EMP-1088,Larry,Lewis,1980-10-08,472-541-171,larry.lewis21@gmail.com,(910) 707-5722,8339 Walnut Ct - Surrey BC V4Z 3I0,Operations,38993,19,Travel,58.15,5,33,27.79,23.97,0.0,1,0,-2.58,0
+EMP-1092,Ronald,Robinson,1995-11-30,619-416-782,ronald.robinson92@outlook.com,(991) 613-9431,1437 Birch Rd - Richmond BC V1K 2W5,Sales,42491,16,Conference,66.27,7,38,22.51,60.26,20.89,0,0,-1.55,0
+EMP-1075,Timothy,Phillips,1979-10-29,963-649-439,timothy.phillips96@gmail.com,(705) 648-2317,3184 Birch Rd - Langley BC V9E 1O1,Marketing,46848,17,Training,50.92,7,33,51.31,14.72,62.01,0,2,-0.35,0
+EMP-1087,Margaret,Robinson,1974-12-25,854-786-301,margaret.robinson96@gmail.com,(364) 537-7744,3278 Birch Rd - Langley BC V8Y 5Y6,Engineering,47022,13,Meals,115.72,1,12,33.28,24.39,0.0,0,1,4.69,0
+EMP-1083,Kenneth,Rodriguez,2001-11-26,294-360-145,kenneth.rodriguez15@gmail.com,(484) 385-8141,1364 Elm Way - Burnaby BC V9Y 9X8,Operations,121994,8,Client Entertainment,53.89,7,39,26.58,51.52,38.65,0,0,-0.2,0
+EMP-1021,Anna,Allen,1980-10-08,676-202-175,anna.allen97@gmail.com,(658) 217-2524,4937 Maple St - Delta BC V5A 1T7,IT,37790,14,Client Entertainment,61.84,6,9,42.59,55.17,0.0,1,1,5.15,0
+EMP-1061,Kimberly,Rodriguez,1998-02-16,921-785-984,kimberly.rodriguez87@gmail.com,(905) 808-8699,6575 Maple St - Vancouver BC V4J 4Y2,Finance,63715,3,Training,149.92,6,39,15.96,54.4,37.26,0,1,3.11,0
+EMP-1072,Ashley,Cooper,1983-03-11,985-171-891,ashley.cooper49@outlook.com,(649) 327-8679,7345 Elm Way - Coquitlam BC V1L 9C4,Legal,38410,7,Travel,110.49,5,14,5.49,68.29,14.3,0,0,5.4,0
+EMP-1015,Margaret,Diaz,1970-12-17,309-785-833,margaret.diaz99@outlook.com,(548) 486-5526,5414 Maple St - Coquitlam BC V6L 7E3,Sales,80451,10,Meals,120.2,7,9,37.17,43.81,5.76,0,2,-2.7,0
+EMP-1093,Ryan,Rodriguez,1986-05-08,518-434-512,ryan.rodriguez76@gmail.com,(201) 873-9889,2492 Cedar Blvd - Vancouver BC V5P 3Y7,Marketing,38000,1,Conference,2850.0,28,1,250.0,800.0,500.0,1,0,85.0,1
+EMP-1052,Matthew,Campbell,1981-08-04,466-315-798,matthew.campbell62@outlook.com,(661) 653-5871,3774 Oak Ave - New Westminster BC V9L 2Y4,Operations,77737,1,Office Supplies,98.32,6,6,32.75,50.99,0.0,1,2,-3.52,0
