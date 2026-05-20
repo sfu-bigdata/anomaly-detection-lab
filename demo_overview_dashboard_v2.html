@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Git & AI-Assisted Anomaly Detection — Demo Overview</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #181b24;
+    --surface-2: #1e222d;
+    --border: #2a2f3e;
+    --text: #e2e4ea;
+    --text-dim: #8b90a0;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --orange: #d29922;
+    --red: #f85149;
+    --purple: #bc8cff;
+    --teal: #39d353;
+    --pink: #f778ba;
+    --radius: 12px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ---- HEADER ---- */
+  .header {
+    text-align: center;
+    padding: 48px 24px 32px;
+    position: relative;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 10%; right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+  }
+  .header .badge {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: rgba(88,166,255,0.1);
+    border: 1px solid rgba(88,166,255,0.2);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+  .header h1 span { color: var(--accent); }
+  .header p {
+    color: var(--text-dim);
+    font-size: 15px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  /* ---- LAYOUT ---- */
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 16px;
+  }
+
+  /* ---- DEMO FLOW ---- */
+  .flow-section { margin-bottom: 56px; }
+
+  .flow-track {
+    display: flex;
+    gap: 0;
+    position: relative;
+    align-items: stretch;
+  }
+  .flow-track::before {
+    content: '';
+    position: absolute;
+    top: 34px;
+    left: 40px;
+    right: 40px;
+    height: 3px;
+    background: var(--border);
+    z-index: 0;
+  }
+
+  .flow-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 6px;
+  }
+
+  .flow-dot {
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    margin: 22px auto 14px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--bg);
+  }
+  .flow-step:nth-child(1) .flow-dot { background: var(--accent); }
+  .flow-step:nth-child(2) .flow-dot { background: var(--green); }
+  .flow-step:nth-child(3) .flow-dot { background: var(--orange); }
+  .flow-step:nth-child(4) .flow-dot { background: var(--purple); }
+  .flow-step:nth-child(5) .flow-dot { background: var(--pink); }
+  .flow-step:nth-child(6) .flow-dot { background: var(--teal); }
+
+  .flow-step .flow-icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 0;
+    filter: grayscale(0);
+  }
+
+  .flow-step h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+  .flow-step p {
+    font-size: 11.5px;
+    color: var(--text-dim);
+    line-height: 1.4;
+  }
+
+  /* ---- GIT VISUAL ---- */
+  .git-section { margin-bottom: 56px; }
+
+  .git-visual {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 36px 32px 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .git-visual::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--red), var(--orange), var(--green), var(--accent));
+  }
+
+  .git-stages {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0;
+    position: relative;
+  }
+
+  .git-stage {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  .stage-box {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 14px 16px;
+    min-height: 160px;
+    position: relative;
+    transition: border-color 0.3s;
+  }
+  .git-stage:hover .stage-box {
+    border-color: rgba(255,255,255,0.15);
+  }
+
+  .stage-box .stage-icon {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .stage-box h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .stage-box .stage-desc {
+    font-size: 11.5px;
+    color: var(--text-dim);
+    line-height: 1.45;
+    margin-bottom: 10px;
+  }
+
+  .stage-cmd {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: inline-block;
+  }
+
+  .cmd-red    { background: rgba(248,81,73,0.12); color: var(--red); }
+  .cmd-orange { background: rgba(210,153,34,0.12); color: var(--orange); }
+  .cmd-green  { background: rgba(63,185,80,0.12); color: var(--green); }
+  .cmd-blue   { background: rgba(88,166,255,0.12); color: var(--accent); }
+
+  /* Arrows between stages */
+  .git-arrow {
+    flex: 0 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+  }
+  .git-arrow svg {
+    width: 40px;
+    height: 20px;
+  }
+  .git-arrow svg path {
+    fill: none;
+    stroke: var(--text-dim);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* Cloud callout for remote */
+  .stage-box.cloud-box {
+    border-color: rgba(88,166,255,0.3);
+    background: rgba(88,166,255,0.04);
+  }
+  .stage-box.untracked-box {
+    border-color: rgba(248,81,73,0.3);
+    background: rgba(248,81,73,0.04);
+  }
+
+  /* ---- YOUR MACHINE / CLOUD labels ---- */
+  .zone-labels {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 0;
+    align-items: flex-start;
+  }
+  .zone-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+  .zone-local {
+    flex: 3.5;
+    text-align: center;
+    color: var(--orange);
+    background: rgba(210,153,34,0.08);
+  }
+  .zone-spacer { flex: 0 0 48px; }
+  .zone-remote {
+    flex: 1;
+    text-align: center;
+    color: var(--accent);
+    background: rgba(88,166,255,0.08);
+  }
+
+  /* ---- BOTTOM ROW ---- */
+  .bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  /* ---- PROJECT STRUCTURE ---- */
+  .structure-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+  }
+  .structure-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .structure-card h3 span { color: var(--green); }
+
+  .tree {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .tree-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tree-indent { color: var(--border); white-space: pre; }
+  .tree-name { color: var(--text); }
+  .tree-name.folder { color: var(--accent); font-weight: 500; }
+  .tree-name.special { color: var(--orange); }
+  .tree-comment {
+    color: var(--text-dim);
+    font-size: 11px;
+    margin-left: 4px;
+  }
+
+  /* ---- KEY CONCEPTS ---- */
+  .concepts-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+  }
+  .concepts-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .concepts-card h3 span { color: var(--purple); }
+
+  .concept-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .concept-row:last-child { border-bottom: none; }
+
+  .concept-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    width: 32px;
+    text-align: center;
+    padding-top: 2px;
+  }
+  .concept-text h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .concept-text p {
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1.45;
+  }
+
+  /* ---- FOOTER ---- */
+  .footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-dim);
+    font-size: 12px;
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  /* ---- RESPONSIVE ---- */
+  @media (max-width: 900px) {
+    .bottom-row { grid-template-columns: 1fr; }
+    .flow-track { flex-wrap: wrap; gap: 12px; }
+    .flow-track::before { display: none; }
+    .flow-step { flex: 0 0 30%; }
+    .git-stages { flex-wrap: wrap; gap: 12px; }
+    .git-arrow { flex: 0 0 100%; padding-top: 0; transform: rotate(90deg); }
+    .zone-labels { flex-wrap: wrap; }
+    .zone-spacer { display: none; }
+  }
+
+  /* ---- ANIMATION ---- */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .flow-section, .git-section, .bottom-row {
+    animation: fadeUp 0.6s ease-out both;
+  }
+  .git-section  { animation-delay: 0.15s; }
+  .bottom-row   { animation-delay: 0.3s; }
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<div class="header">
+  <div class="badge">Applied AI in Data Analytics &middot; Week 4</div>
+  <h1><span>Git</span> &amp; AI-Assisted Anomaly Detection</h1>
+  <p>Demo overview</p>
+</div>
+
+<div class="container">
+
+<!-- ========== DEMO FLOW ========== -->
+<div class="flow-section">
+  <div class="section-label">Demo Flow</div>
+  <div class="flow-track">
+
+    <div class="flow-step">
+      <span class="flow-icon">🌐</span>
+      <div class="flow-dot">1</div>
+      <h3>Create Repo<br>on GitHub</h3>
+      <p>New repository with README &amp; Python .gitignore template</p>
+    </div>
+
+    <div class="flow-step">
+      <span class="flow-icon">📥</span>
+      <div class="flow-dot">2</div>
+      <h3>Clone &amp; Set Up<br>Environment</h3>
+      <p>Clone the repo, scaffold folders following Noble's rules, set up virtual env with uv</p>
+    </div>
+
+    <div class="flow-step">
+      <span class="flow-icon">🔄</span>
+      <div class="flow-dot">3</div>
+      <h3>First Git Cycle<br><em style="font-weight:400;font-size:11px">add → commit → push</em></h3>
+      <p>Push project structure &amp; notebook to GitHub using AI + terminal</p>
+    </div>
+
+    <div class="flow-step">
+      <span class="flow-icon">🤖</span>
+      <div class="flow-dot">4</div>
+      <h3>Walk Through<br>Notebook with Codex</h3>
+      <p>Pre-filled anomaly detection lab on synthetic expense claims — Codex helps interpret results</p>
+    </div>
+
+    <div class="flow-step">
+      <span class="flow-icon">📊</span>
+      <div class="flow-dot">5</div>
+      <h3>Run 4 Methods<br>&amp; Save Outputs</h3>
+      <p>Z-score, DBSCAN, Isolation Forest, PCA — compare &amp; save chart + CSV to reports/</p>
+    </div>
+
+    <div class="flow-step">
+      <span class="flow-icon">🚀</span>
+      <div class="flow-dot">6</div>
+      <h3>Second Git Cycle<br><em style="font-weight:400;font-size:11px">add → commit → push</em></h3>
+      <p>Push analysis results to GitHub — see full commit history</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ========== GIT STAGING VISUAL ========== -->
+<div class="git-section">
+  <div class="section-label">How Git Tracks Your Work</div>
+
+  <div class="git-visual">
+
+    <div class="zone-labels">
+      <div class="zone-label zone-local">💻 Your Machine (Local)</div>
+      <div class="zone-spacer"></div>
+      <div class="zone-label zone-remote">☁️ GitHub (Remote)</div>
+    </div>
+
+    <div class="git-stages">
+
+      <!-- UNTRACKED -->
+      <div class="git-stage">
+        <div class="stage-box untracked-box">
+          <span class="stage-icon">📝</span>
+          <h4>Untracked / Modified</h4>
+          <p class="stage-desc">Files you've created or changed. Git sees them but isn't tracking them yet.</p>
+          <span class="stage-cmd cmd-red">git status</span>
+        </div>
+      </div>
+
+      <!-- ARROW -->
+      <div class="git-arrow">
+        <svg viewBox="0 0 40 20"><path d="M4 10 L30 10 M24 4 L30 10 L24 16"/></svg>
+      </div>
+
+      <!-- STAGING -->
+      <div class="git-stage">
+        <div class="stage-box">
+          <span class="stage-icon">📦</span>
+          <h4>Staging Area</h4>
+          <p class="stage-desc">Files marked for the next snapshot. You choose what to include.</p>
+          <span class="stage-cmd cmd-orange">git add .</span>
+        </div>
+      </div>
+
+      <!-- ARROW -->
+      <div class="git-arrow">
+        <svg viewBox="0 0 40 20"><path d="M4 10 L30 10 M24 4 L30 10 L24 16"/></svg>
+      </div>
+
+      <!-- LOCAL REPO -->
+      <div class="git-stage">
+        <div class="stage-box">
+          <span class="stage-icon">💾</span>
+          <h4>Local Repository</h4>
+          <p class="stage-desc">A saved snapshot with a message. Your project's history lives here.</p>
+          <span class="stage-cmd cmd-green">git commit -m "msg"</span>
+        </div>
+      </div>
+
+      <!-- ARROW -->
+      <div class="git-arrow">
+        <svg viewBox="0 0 40 20"><path d="M4 10 L30 10 M24 4 L30 10 L24 16"/></svg>
+      </div>
+
+      <!-- REMOTE -->
+      <div class="git-stage">
+        <div class="stage-box cloud-box">
+          <span class="stage-icon">☁️</span>
+          <h4>GitHub (Remote)</h4>
+          <p class="stage-desc">Your work backed up in the cloud. Teammates can pull your changes.</p>
+          <span class="stage-cmd cmd-blue">git push</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ========== BOTTOM ROW ========== -->
+<div class="bottom-row">
+
+  <!-- PROJECT STRUCTURE -->
+  <div class="structure-card">
+    <h3>📁 Project Structure — <span>Noble's Rules</span></h3>
+    <div class="tree">
+      <div class="tree-line"><span class="tree-indent"></span><span class="tree-name folder">anomaly-detection-lab/</span></div>
+      <div class="tree-line"><span class="tree-indent">├── </span><span class="tree-name special">.gitignore</span><span class="tree-comment">← what NOT to push</span></div>
+      <div class="tree-line"><span class="tree-indent">├── </span><span class="tree-name special">README.md</span><span class="tree-comment">← project description</span></div>
+      <div class="tree-line"><span class="tree-indent">├── </span><span class="tree-name special">requirements.txt</span><span class="tree-comment">← share this, not .venv/</span></div>
+      <div class="tree-line"><span class="tree-indent">├── </span><span class="tree-name folder">data/</span><span class="tree-comment">← raw data</span></div>
+      <div class="tree-line"><span class="tree-indent">│   └── </span><span class="tree-name">employee_expense_claims_with_pii.csv</span></div>
+      <div class="tree-line"><span class="tree-indent">├── </span><span class="tree-name folder">src/</span><span class="tree-comment">← code &amp; notebooks</span></div>
+      <div class="tree-line"><span class="tree-indent">│   └── </span><span class="tree-name">4_1_detecting_anomalies_with_ai.ipynb</span></div>
+      <div class="tree-line"><span class="tree-indent">└── </span><span class="tree-name folder">reports/</span><span class="tree-comment">← generated outputs</span></div>
+      <div class="tree-line"><span class="tree-indent">    ├── </span><span class="tree-name">anomaly_method_comparison.csv</span></div>
+      <div class="tree-line"><span class="tree-indent">    └── </span><span class="tree-name">method_comparison.png</span></div>
+    </div>
+  </div>
+
+  <!-- KEY CONCEPTS -->
+  <div class="concepts-card">
+    <h3>🔑 Key Concepts in <span>Today's Demo</span></h3>
+
+    <div class="concept-row">
+      <div class="concept-icon">🔄</div>
+      <div class="concept-text">
+        <h4>Git — Version Control</h4>
+        <p>Cloud-based file management. Tracks every change. Enables collaboration. Core loop: add → commit → push.</p>
+      </div>
+    </div>
+
+    <div class="concept-row">
+      <div class="concept-icon">📁</div>
+      <div class="concept-text">
+        <h4>Organize Deliberately</h4>
+        <p>Noble's rules: name files by content, group similar things. src/ for code, data/ for data, reports/ for outputs.</p>
+      </div>
+    </div>
+
+    <div class="concept-row">
+      <div class="concept-icon">🚫</div>
+      <div class="concept-text">
+        <h4>.gitignore — What NOT to Push</h4>
+        <p>Virtual environments, caches, secrets, raw PII data. If it can be regenerated or is sensitive, exclude it.</p>
+      </div>
+    </div>
+
+    <div class="concept-row">
+      <div class="concept-icon">📦</div>
+      <div class="concept-text">
+        <h4>Virtual Environment</h4>
+        <p>Isolates your project's Python packages. Share requirements.txt so anyone can recreate it.</p>
+      </div>
+    </div>
+
+    <div class="concept-row">
+      <div class="concept-icon">🎯</div>
+      <div class="concept-text">
+        <h4>Use Only Signal Features</h4>
+        <p>If a column doesn't help answer your question — PII, unused IDs, anything — leave it out. Drop it from the CSV, or use <code>usecols=</code> when loading.</p>
+      </div>
+    </div>
+
+    <div class="concept-row">
+      <div class="concept-icon">🤖</div>
+      <div class="concept-text">
+        <h4>AI-Assisted Workflow</h4>
+        <p>Use Codex to scaffold projects, write code, interpret results. Know what to ask &amp; how to verify.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<!-- ========== FOOTER ========== -->
+<div class="footer">
+  <a href="https://swcarpentry.github.io/managing-research-software-projects/02-project/" target="_blank">SW Carpentries: Organize Deliberately</a>
+  &nbsp;·&nbsp;
+  <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424" target="_blank">Noble's Rules (PLoS Paper)</a>
+  &nbsp;·&nbsp;
+  <a href="https://swcarpentry.github.io/git-novice/" target="_blank">SW Carpentries: Git Novice</a>
+  &nbsp;·&nbsp;
+  <a href="https://scikit-learn.org/stable/modules/outlier_detection.html" target="_blank">scikit-learn: Outlier Detection</a>
+</div>
+
+</body>
+</html>
